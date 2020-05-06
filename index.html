@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nomad Help Desk</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+  </head>
+  <body>
+    
+      <header class="header">
+      
+        <div class="row">
+              <div class="logo">
+              <img src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-wifi-vector-icon-png-image_4015278.jpg">
+              </div>
+            <ul class="main-nav">
+                <li class="active"><a href="index.html"> Home </a></li>
+                <li><a href="about.html"> About </a></li>
+                <li><a href="guide.html"> Guide </a></li>
+                
+
+            </ul>
+        </div>
+           
+      </header>
+
+      <div id="page-container">
+        <div id="content-wrap">
+          <div>
+      </div>
+      <Main> 
+        <form action="index.html" method="post">
+        
+        <h1 calss="network"> Netowrk Interface Down Trouble steps</h1>
+        
+        
+          
+          <legend><span class="steps"></span> Complete the troubleshooting steps as follows:</legend>
+          
+          <label for="step_1">Has this Interface flapped more the 100 times?</label>
+                <p>
+              <input type="radio"  name="yes_no" checked>Yes</input>
+              <input type="radio"  name="yes_no" checked>No</input>
+              </p>
+          
+          
+          <label for="p2">If Yes: Priority Plus Call Out</label>
+          <ol>
+            <li> Assign the ticket as a Priority 2 to Nomad Ops Network.</li>
+            <li> Contact LAN/WAN Conectivity On-call.</li>
+          </ol>
+          <label for="p2">If NO: Remote into the Device Netowrk</label>
+          <label for="up_down">Is the Switch Interface UP Or Down?</label>
+          <p>
+            <input type="radio"  name="intStatus" checked>Interface UP</input>
+          <input type="radio"  name="intStatus" checked>Interface Down</input>
+          </p>
+          
+
+          <label for="intup">If Interface is UP:</label>
+          <ol>
+            <li> Remote into the Device Netowrk</li>
+            <ul>
+              <li class="click_here"> ** Click here for steps **
+                <ul>
+                  <li>Double-click on the putty.exe program or the desktop shortcut to launch the application.</li>
+                <li>Enter your connection settings: ex(172.168.xx.xx)</li>
+					<ol>
+					<li>Port: 22 (leave as default)</li>
+					<li>Connection Type: SSH (leave as default)<li>
+					</ol>
+                <li>Click Open to start the SSH session.</li>
+                <li>If this is your first time connecting to the server from this computer, you will see the following output. Accept the connection by clicking Yes.</li>
+                <li>Once the SSH Connection is open, you should see a terminal prompt asking for your username:</li>
+					<ol>
+					<li>login as</li>
+					<li>Using keyboard-interactive authentication.</li>
+					<li>Password:</li>
+					</ol>
+				<li>You are now logged into your server with SSH. You should see output like this:
+                Input command: show logg</li>
+                <li><li><a href="Guide.html"> Click here for for step by step Putty instruction </a></li>        
+                </ul>
+              </li>
+              
+            </ul>
+            <li> Capture the command output > show logg</li>
+            <label for="intlogg">Show logg Details:</label>
+            <p><textarea id="intlogg" name="int_logg"></textarea></p>
+          
+            <li> Assign the ticket as a Priority 3 to Nomad Ops Network.</li>
+          </ol>
+          <label for="intdown">If Interface is Down:</label>
+          <ol>
+            <li> Assign the ticket as a Priority 2 to Nomad Ops Network.</li>
+          </ol>
+
+          <div id="sendemail" class="send_email"> -->
+            <form>
+              <h2>>Email results to Nomad Ops Network </h2>
+                <ul>
+                  <label for="email">Email:</label>
+                            <input type="email" id="email" placeholder="email@nomadservicedesk.com">
+                  <li>
+                    <label for="subject">Subject:</label> 
+                            <input type="text" id="subject">
+                  <li>
+                    <label for="msg"> Fill in all finding in the message box:</label>
+                    <P><textarea id="msg" name="user_message">
+                      1. Has this Interface flapped more the 100 times? (Yes/N0) 
+                      A.If Yes: Priority Plus Call Out
+                        > Assign the ticket as a Priority 2 to Nomad Ops Network.
+                        > Contact LAN/WAN Connectivity On-call.
+                        > Who did you speak with?
+                      
+                      B. If NO: Remote into the Device Network
+                        1.Is the Switch Interface UP Or Down?
+                           
+                          A. If Interface is UP:
+                            1. Remote into the Device Network
+                             > Show logg Details:
+                            2. Assign the ticket as a Priority 3 to Nomad Ops Network.:
+                      
+                          B. If Interface is Down:
+                            1. Assign the ticket as a Priority 2 to Nomad Ops Network
+                                        
+                      </textarea></P>
+                  <p><input class="btn" type="submit" value="Send"></p>
+                  
+                  </li>
+                </ul> 
+            </form>
+          </div>  
+        
+  
+      
+        
+        
+      </Main>
+        
+          
+        
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+          <footer>
+              <p><small>&copy;Nomad Help Desk</small></p>
+          </footer> 
+</html>

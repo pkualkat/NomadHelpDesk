@@ -1,0 +1,155 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-image: url(../img/img-1.png), linear-gradient(rgba(0, 0, 0.5, 0.5), rgba(0,0,0,0.3));
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+body
+{
+    font-family: monospace;
+    color: whitesmoke;
+}
+
+form {
+  text-align: left;
+  width: auto;
+  height: auto;
+  margin: 20px;
+  padding: 20px;
+  font-size: 20px;
+  color: rgba(15, 38, 240, 0.986);
+
+}
+
+
+h1.network {
+  text-align: left;
+  width: auto;
+  height: auto;
+  margin: 20px;
+  font-size: 30px;
+  color: rgba(15, 38, 240, 0.986);
+  text-align: center;
+  text-transform: uppercase;
+  padding: 30px;
+}
+
+/* text color for guide ordered list */
+ol.ins {
+  color: blue;
+}
+main {
+  margin: auto;
+  align-content: stretch;
+}
+
+.header{
+  padding: 20px;
+}
+
+.main-nav
+{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.main-nav li
+{
+    display: inline-block;
+}
+
+.main-nav li
+{
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: "Roboto", sans-serif;
+    font-size:15px ;
+}
+
+.main-nav li.active a
+{
+    border: 1px solid white;
+}
+
+.main-nav li a:hover
+{
+    border: 1px solid white;
+}
+.logo img
+{
+    border-radius: 90%;
+    width: 75px;
+    height: auto;
+    float: left;
+  }
+  
+
+.row
+{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+.content-wrap {
+    padding-bottom: 2.5rem;    
+  }
+
+
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px;
+  }
+
+footer { 
+    position: left;
+    bottom: 100%;
+    width: 100%;
+    height: 2.5rem;
+    font-size: medium;
+    color: brown;            
+  }
+
+/* small screen/tablet*/
+@media screen and (min-width: 550px), print{
+	main {
+		max-width: 50%;
+		margin:0 0 1em 1em;
+		float:right;
+		display:block;
+  }
+  
+  footer {
+    padding-bottom: 11px;
+  }
+
+  
+/*wide screen*/
+@media screen and (min-width: 800px), print{
+	body {
+		padding: 0.6em 0 0;
+	}
+	
+  }
+  
+ /* Color for click here to drop down   */
+.click_here {
+  color: crimson;
+}
