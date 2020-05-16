@@ -7,7 +7,7 @@
 
   </head>
   <body>
-    
+    <div class="container">
       <header class="header">
       
         <div class="row">
@@ -24,10 +24,7 @@
            
       </header>
 
-      <div id="page-container">
-        <div id="content-wrap">
-          <div>
-      </div>
+    
       <Main> 
         <form action="index.html" method="post">
         
@@ -39,8 +36,8 @@
           
           <label for="step_1">Has this Interface flapped more the 100 times?</label>
                 <p>
-              <input type="radio"  name="yes_no" checked>Yes</input>
-              <input type="radio"  name="yes_no" checked>No</input>
+              <label><input type="radio"  name="yes_no" checked>Yes</input></label>
+            <label><input type="radio"  name="yes_no" checked>No</input></label>
               </p>
           
           
@@ -52,8 +49,8 @@
           <label for="p2">If NO: Remote into the Device Netowrk</label>
           <label for="up_down">Is the Switch Interface UP Or Down?</label>
           <p>
-            <input type="radio"  name="intStatus" checked>Interface UP</input>
-          <input type="radio"  name="intStatus" checked>Interface Down</input>
+          <label><input type="radio"  name="intStatus" checked>Interface UP</input></label>
+          <label><input type="radio"  name="intStatus" checked>Interface Down</input></label>
           </p>
           
 
@@ -95,7 +92,7 @@
             <li> Assign the ticket as a Priority 2 to Nomad Ops Network.</li>
           </ol>
 
-          <div id="sendemail" class="send_email"> -->
+          <div id="sendemail" class="send_email">
             <form>
               <h2>>Email results to Nomad Ops Network </h2>
                 <ul>
@@ -140,10 +137,13 @@
         
           
         
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/app.js"></script>
-  </body>
-          <footer>
-              <p><small>&copy;Nomad Help Desk</small></p>
-          </footer> 
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <script src="js/app.js"></script>
+      <footer>
+        <p><small>&copy;Nomad Help Desk</small></p>
+      </footer>
+      </body>
+          
+           
+    </div>
 </html>
